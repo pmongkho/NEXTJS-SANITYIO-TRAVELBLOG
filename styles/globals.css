@@ -1,9 +1,6 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,6 +8,114 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/* App */
+.app-container {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+/* Navbar */
+ .nav-container {
+  height: 100vh;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+ .nav-container .nav-item-container {
+  
+  padding: 30px;
+  color:rgb(95, 46, 141);
+  font-size: 1.5em;
+}
+
+/* Homepage */
+.dashboard {
+  width: 100%;
+}
+.posts-container {
+  background-color: rgb(224, 217, 230);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card-container {
+  background-color: #fff;
+  width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-container .tag {
+  color: #fff;
+  padding: 5px 10px;
+  margin: 10px 0 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-container .tag:nth-child(1) {
+  margin-left: 0 !important;
+}
+
+.card-container .info-container {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Images */
+.main-image,
+.post-image {
+  width: 100%;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+/* Post */
+.post-container {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.post-container .info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.post-container .author-container,
+.post-container .map-container {
+  width: 48%;
+}
+
+.map-container .map {
+  width: 100%;
+  height: 200px;
 }
